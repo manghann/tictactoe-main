@@ -92,3 +92,10 @@
 #reset {
     background-color: #45AEA4;
 }
+
+.credit {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 0;
+}
