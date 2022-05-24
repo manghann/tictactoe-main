@@ -60,13 +60,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const announce = (type) => {
         switch(type){
             case PLAYERO_WON:
-                announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
+                announcer.innerHTML = 'Winner: Player <span class="playerO">O</span>!';
                 break;
             case PLAYERX_WON:
-                announcer.innerHTML = 'Player <span class="playerX">X</span> Won';
+                announcer.innerHTML = 'Winner: Player <span class="playerX">X</span>!';
                 break;
             case TIE:
-                announcer.innerText = 'Tie';
+                announcer.innerText = "It's a Tie!";
         }
         announcer.classList.remove('hide');
     };
@@ -101,7 +101,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     
     const resetBoard = () => {
-        board = ['', '', '', '', '', '', '', '', ''];
+        board = ['', '', '', 
+                 '', '', '',
+                 '', '', ''];
         isGameActive = true;
         announcer.classList.add('hide');
 
