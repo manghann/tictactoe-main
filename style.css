@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Itim', cursive;
+    font-family: 'Press Start 2P', normal;
 }
 
 .background {
-    background-color: #12181B;
+    background: rgb(60,3,132);
+    background: radial-gradient(circle, rgba(60,3,132,1) 38%, rgba(88,1,198,1) 88%, rgba(88,1,198,1) 97%);
     height: 100vh;
     padding-top: 1px;
 }
@@ -14,8 +15,16 @@
     color: white;
     text-align: center;
     font-size: 40px;
-    margin-top: 10%;
+    margin-top: 6%;
 }
+
+.subtitle {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
 
 .display {
     color: white;
@@ -39,8 +48,9 @@
 }
 
 .tile {
-    border: 1px solid white;
-    min-width: 100px;
+    border: 3px solid white;
+    border-radius: 6px;
+    min-width: 90px;
     min-height: 100px;
     display: flex;
     justify-content: center;
@@ -50,11 +60,11 @@
 }
 
 .playerX {
-    color: #09C372;
+    color: #FFD032;
 }
 
 .playerO {
-    color: #498AFB;
+    color: #EB1751;
 }
 
 .controls {
@@ -68,7 +78,7 @@
 .controls button {
     color: white;
     padding: 8px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     font-size: 20px;
     margin-left: 1em;
@@ -76,9 +86,9 @@
 }
 
 .restart {
-    background-color: #498AFB;
+    background-color: #EB8A56;
 }
 
 #reset {
-    background-color: #FF3860;
+    background-color: #45AEA4;
 }
